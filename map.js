@@ -69,7 +69,7 @@
                 .on("click", function (d) {
                     d3.select(this)
                         .attr("opacity", 1)
-                        .attr("r", '20')
+                        .attr("r", '10')
                         .attr('fill', '#ff0000')
                         .transition()
                         .duration(1000)
