@@ -11,7 +11,7 @@
  * 3. show how to plot points with geoAlbers
  */
 
-"use strict";
+//"use strict";
 (function () {
     const m = {
         width: 1200,
@@ -48,7 +48,10 @@
                 .data(data.features)
                 .enter()
                 .append('path')
-                .attr('fill', '#b1b6bd')
+                .attr('stroke',
+                    '#b1b6bd')
+                .attr('fill',
+                    '#b1b6bd')
                 .attr('d', path)
 
             // plots circles on the boston map
