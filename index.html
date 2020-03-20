@@ -1,0 +1,60 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+                body {
+                    font: 12px Arial;
+                    display: flex;
+                    flex-direction: column;
+                    flex-flow: column-reverse
+                }
+
+                button {
+                    width: 5rem;
+                }
+
+                path {
+                    stroke-width: 2;
+                    fill: none;
+                }
+
+                .axis path,
+                .axis line {
+                    fill: none;
+                    stroke: grey;
+                    stroke-width: 1;
+                    shape-rendering: crispEdges;
+                }
+
+                /*
+        change width to 800px and height to 600px
+        */
+                div.tooltip {
+                    position: absolute;
+                    text-align: center;
+                    width: 500px;
+                    height: 300px;
+                    padding: 2px;
+                    font: 12px sans-serif;
+                    border: 0px;
+                    outline-color: black;
+                    outline-style: solid;
+                    outline-width: 1px;
+                    background-color: #FEFEFE;
+                    border-radius: 8px;
+                    pointer-events: none;
+                    z-index: 1;
+                }
+    </style>
+    <meta charset="utf-8">
+    <title>Map testing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+    <script src="map.js"></script>
+</body>
+</html>
